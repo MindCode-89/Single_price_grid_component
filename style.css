@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-Gray);
+}
+
+.container_parent {
+  width: 60em;
+  height: 40em;
+  margin: 5em auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.parent {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  width: 60em;
+  height: 20em;
+  background-color: white;
+}
+
+.title {
+  padding: 0;
+  position: relative;
+  top: 2em;
+  left: 0.8em;
+  color: var(--Cyan);
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "karla";
+}
+.subtitle {
+  padding: 0;
+  font-family: "karla";
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  top: 5em;
+  left: 1.5em;
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+}
+.paragraf {
+  font-family: "karla";
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  top: 5em;
+  left: 1.2em;
+  color: var(--Grayish-Blue);
+}
+
+/* CONTENEDOR PRICING*/
+
+.pricing {
+  background-color: aqua;
+  grid-row: 3/5;
+  grid-column: 1/4;
+  height: 20em;
+}
+
+.div_01 {
+  width: 30em;
+  height: 20em;
+  font-family: "karla";
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--Cyan);
+  color: white;
+}
+
+.Why_Us {
+  background-color: rgb(2, 83, 83);
+  grid-row: 3/5;
+  grid-column: 4/7;
+  height: 20em;
+}
+
+h3 {
+  position: relative;
+  left: 3em;
+  top: 2em;
+}
+
+.price {
+  font-size: 40px;
+  position: relative;
+  left: 1.4em;
+  top: 2em;
+}
+
+.span {
+  font-size: 15px;
+}
+
+.full_acces {
+  margin-top: 7em;
+  margin-left: 3em;
+}
+
+button {
+  color: white;
+  font-family: "Karla";
+  position: relative;
+  left: 8em;
+  top: 2em;
+  background-color: var(--Bright-Yellow);
+  border-radius: 8px;
+  width: 238px;
+  height: 49px;
+}
+
+.div_02 {
+  height: 320px;
+  font-family: "karla";
+  font-size: 20px;
+  font-weight: 300;
+  background-color: rgb(80, 183, 183);
+  color: rgb(255, 255, 255);
+}
+
+.paragraf_tutorials {
+  position: relative;
+  top: 4em;
+  left: 3em;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+margin-bottom: 4em;
+}
+
+/* MEDIA QUERIES 375PX X 667PX */
+
+ @media screen and (min-width: 375px) and (max-width: 667px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        padding: 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        height: 100%;
+      }
+
+  .container_parent {
+ 
+    width: 22em;
+    position: relative;
+    left: 1em;
+    height: auto; 
+    margin: 0 ; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .parent {
+    position: relative;
+    top: 2em;
+    left: em;
+    width: 22em;
+    height: 18em;
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .title {
+    padding: 0;
+    position: relative;
+    top: 2em;
+    left: 1.3em;
+    color: var(--Cyan);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "karla";
+  }
+
+  .subtitle {
+    padding: 0;
+    font-family: "karla";
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    top: 4em;
+    left: 1.8em;
+    color: var(--Bright-Yellow);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .subtitle .break {
+    display: block;
+  }
+
+  .paragraf {
+    font-family: "karla";
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    top: 6em;
+    left: 2em;
+    color: var(--Grayish-Blue);
+  }
+
+  .paragraf .break_01 {
+    display: block;
+  }
+  .paragraf  .break_03{
+    display: block;
+
+  }
+
+  button {
+    color: white;
+    font-family: "Karla";
+    position: relative;
+    left: 5em;
+    top: 2em;
+    background-color: var(--Bright-Yellow);
+    border-radius: 8px;
+    width: 238px;
+    height: 49px;
+  }
+
+
+
+
+  .pricing {
+    background-color: aqua;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 10em;
+    height: 18em;
+  }
+  .div_01 {
+    width: 22em;
+    height: 20em;
+    font-family: "karla";
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--Cyan);
+    color: white;
+  }
+
+
+  .Why_Us {
+    background-color: rgb(8, 78, 78);
+    grid-row: 3/5;
+    grid-column: 1/3;
+    height: 20em;
+  }
+
+
+
+  .attribution {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    
+    
+}
+
+
+ }
